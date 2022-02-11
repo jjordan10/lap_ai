@@ -31,6 +31,8 @@ bodyA.SetInertiaXX( chrono.ChVectorD(10,10,10) )
 print (bodyA.GetInertia() )
 bodyA.SetPos(chrono.ChVectorD(1,-1,0))
 bodyA.GetCollisionModel().AddBox(material,10,1,10)
+
+##############################################################################################################################
 bodyA.SetBodyFixed(True)
 bodyA.SetCollide(True)
 
