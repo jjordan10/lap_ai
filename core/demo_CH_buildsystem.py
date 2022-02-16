@@ -32,7 +32,6 @@ print (bodyA.GetInertia() )
 bodyA.SetPos(chrono.ChVectorD(1,-1,0))
 bodyA.GetCollisionModel().AddBox(material,10,1,10)
 
-##############################################################################################################################
 bodyA.SetBodyFixed(True)
 bodyA.SetCollide(True)
 
@@ -84,7 +83,7 @@ print('----------')
 print ('Positions of all bodies in the system:')
 for abody in my_system.Get_bodylist():
     print (' ', abody.GetName(), ' pos =', abody.GetPos() )
-
+############################################################################################ Semana 2
 # Use a body with an auxiliary reference (REF) that does not correspond to the center of gravity (COG)
 bodyC = chrono.ChBodyAuxRef()
 my_system.AddBody(bodyC)
